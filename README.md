@@ -1,73 +1,44 @@
-# React + TypeScript + Vite
+# Portfolio & Blog - Guilherme Medeiros Gomes
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project was developed to showcase my projects, skills, and experiences as a software developer.
+Inspired by [lukeberrypi](https://github.com/lukeberrypi)
 
-Currently, two official plugins are available:
+## 🚀 About the Project
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This is a modern, responsive, and performant web application built to serve as my digital business card. The design is minimalist, focused on content and user experience, using a dark color palette (Dark Mode) for visual comfort.
 
-## React Compiler
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Technologies Used
 
-## Expanding the ESLint configuration
+- **[React](https://react.dev/):** JavaScript library for building user interfaces.
+- **[TypeScript](https://www.typescriptlang.org/):** JavaScript superset that adds static typing.
+- **[Vite](https://vitejs.dev/):** Fast build tool for modern web development.
+- **[Tailwind CSS](https://tailwindcss.com/):** Utility-first CSS framework for rapid and consistent styling.
+- **[React Router](https://reactrouter.com/):** Library for routing and navigation in the application.
+- **[Lucide React](https://lucide.dev/) & [React Icons](https://react-icons.github.io/react-icons/):** Icon libraries.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 📦 How to Run the Project
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+To run this project locally, follow the steps below:
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### Prerequisites
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- [Node.js](https://nodejs.org/) installed (version 18 or higher).
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Installation
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/dionae1/blog.git
+   cd blog
+   ```
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
