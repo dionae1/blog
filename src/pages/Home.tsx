@@ -2,8 +2,12 @@ import FeaturedProject from "../components/FeaturedProject"
 import Socials from "../components/Socials"
 import EmailContact from "../components/EmailContact";
 import ResumeDownload from "../components/ResumeDownload";
+import { useEffect } from "react";
 
-function App() {
+function Home() {
+    useEffect(() => {
+        document.title = "Guilherme Medeiros | Software Developer";
+    }, []);
 
     return (
         <div className="bg-zinc-900 min-h-screen text-zinc-200 p-4">
@@ -16,8 +20,7 @@ function App() {
                         <Socials />
                     </div>
                     <FeaturedProject />
-                    <div className="mt-8 py-8 px-2 flex flex-col gap-2 sm:flex-row sm:justify-between sm:items-center">
-                        <EmailContact />
+                    <div className="mt-8 flex items-center justify-center">
                         <ResumeDownload />
                     </div>
                 </div>
@@ -26,4 +29,4 @@ function App() {
     )
 }
 
-export default App
+export default Home
