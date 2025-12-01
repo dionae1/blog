@@ -1,6 +1,5 @@
 import FeaturedProject from "../components/FeaturedProject"
 import Socials from "../components/Socials"
-import EmailContact from "../components/EmailContact";
 import ResumeDownload from "../components/ResumeDownload";
 import { useEffect } from "react";
 
