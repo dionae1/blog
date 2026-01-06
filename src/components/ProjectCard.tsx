@@ -5,7 +5,7 @@ import LanguageHighlight from "./LanguageHighlight";
 interface ProjectCardProps {
     title: string;
     description: string;
-    image: string;
+    image?: string;
     technologies: string[];
     demoLink?: string;
     repoLink?: string;
@@ -14,13 +14,15 @@ interface ProjectCardProps {
 function ProjectCard({ title, description, image, technologies, demoLink, repoLink }: ProjectCardProps) {
     return (
         <div className="group border border-zinc-800 rounded-xl overflow-hidden hover:border-zinc-600 transition-colors bg-zinc-900/30">
+            {image && (
             <div className="w-full aspect-video bg-zinc-800 overflow-hidden relative border-b border-zinc-800/50">
                 <img
                     src={image}
                     alt={`${title} Preview`}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    className="w-full h-full object-cover group-hover:scale-101 transition-transform duration-500"
                 />
             </div>
+            )}
             <div className="p-5">
                 <div className="flex justify-between items-start gap-4">
                     <h3 className="text-xl font-bold text-zinc-100 group-hover:text-white">{title}</h3>
