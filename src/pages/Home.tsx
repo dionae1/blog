@@ -2,6 +2,7 @@ import FeaturedProject from "../components/FeaturedProject"
 import Socials from "../components/Socials"
 import ResumeDownload from "../components/ResumeDownload";
 import { useEffect } from "react";
+import BaixarCurriculo from "../components/BaixarCurriculo";
 
 function Home() {
     useEffect(() => {
@@ -19,8 +20,9 @@ function Home() {
                         <Socials />
                     </div>
                     <FeaturedProject />
-                    <div className="mt-8 flex items-center justify-center">
+                    <div className="mt-8 flex items-center justify-center gap-8">
                         <ResumeDownload />
+                        <BaixarCurriculo />
                     </div>
                 </div>
             </div>

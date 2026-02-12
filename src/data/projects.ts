@@ -21,7 +21,7 @@ export const projects: Project[] = [
     {
         title: "Local RAG System",
         description: "A Retrieval-Augmented Generation (RAG) system that allows users to upload documents and query them using natural language processing techniques.",
-        image: "/images/rag_preview.png",
+        // image: "/images/rag_preview.png",
         technologies: ["Python", "LangChain", "GenAI", "Ollama", "HuggingFace", "FastAPI", "Vector DBs"],
         repoLink: "https://github.com/dionae1/local-rag"
     },

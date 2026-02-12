@@ -1,6 +1,7 @@
-import Socials from "../components/Socials";
 import { useEffect } from "react";
-import { SiPython, SiFastapi, SiDjango, SiReact, SiTypescript, SiJavascript, SiTailwindcss, SiPostgresql, SiAmazonwebservices, SiDocker, SiGit, SiLinux, SiNodedotjs } from "react-icons/si";
+import { SiAmazonwebservices, SiDocker, SiFastapi, SiGit, SiJavascript, SiLinux, SiPostgresql, SiPython, SiReact, SiSpring, SiTailwindcss, SiTypescript } from "react-icons/si";
+import { FaJava } from "react-icons/fa";
+import Socials from "../components/Socials";
 
 function About() {
     useEffect(() => {
@@ -13,8 +14,8 @@ function About() {
 
             <div className="flex flex-col gap-6 text-zinc-300 leading-relaxed">
                 <p>
-                    Guilherme Medeiros Gomes, a passionate Software Developer and Information Systems student.
-                    I have a strong background in Python and web development, always striving to create not obvious solutions, I believe that logical creativity is the key for progress.
+                    Guilherme Gomes, a passionate Software Developer and Information Systems student.
+                    I have a strong background in Java, Python and web development, always striving to create not obvious solutions, I believe that logical creativity is the key for progress.
                 </p>
 
                 <p>
@@ -32,11 +33,11 @@ function About() {
                     <div className="flex flex-wrap gap-4 text-zinc-400">
                         <SiPython size={32} title="Python" className="hover:text-yellow-400 transition-colors" />
                         <SiFastapi size={32} title="FastAPI" className="hover:text-teal-400 transition-colors" />
-                        <SiDjango size={32} title="Django" className="hover:text-green-700 transition-colors" />
+                        <FaJava size={32} title="Java" className="hover:text-orange-500 transition-colors" />
+                        <SiSpring size={32} title="Spring" className="hover:text-green-500 transition-colors" />
                         <SiReact size={32} title="React" className="hover:text-blue-400 transition-colors" />
                         <SiTypescript size={32} title="TypeScript" className="hover:text-blue-600 transition-colors" />
                         <SiJavascript size={32} title="JavaScript" className="hover:text-yellow-300 transition-colors" />
-                        <SiNodedotjs size={32} title="Node.js" className="hover:text-green-500 transition-colors" />
                         <SiTailwindcss size={32} title="Tailwind CSS" className="hover:text-cyan-400 transition-colors" />
                         <SiPostgresql size={32} title="PostgreSQL" className="hover:text-blue-300 transition-colors" />
                         <SiAmazonwebservices size={32} title="AWS" className="hover:text-orange-400 transition-colors" />
